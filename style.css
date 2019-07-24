@@ -1,0 +1,291 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+General
+*/
+
+body {
+    background: rgb(236, 238, 241);
+    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(76, 76, 76);
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+p {
+    text-align: left;
+    font-size: 10px;
+}
+
+a {
+    color: rgb(0, 119, 197);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+a:hover { 
+    text-decoration: underline;
+}
+
+i {
+    font-style: italic;
+}
+
+/*
+Sign in
+*/
+
+.sign-in-wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    padding: 10px 30px;
+}
+
+.sign-in-box {
+    display: block;
+    float: right;
+    text-align: right;
+    color: #505050;
+}
+
+.sign-in-box a:hover {
+    text-decoration: none;
+}
+
+.sign-in-col-1 {
+    float: left;
+}
+
+.sign-in-col-2 {
+    float: right;
+}
+
+.sign-in-col-2 button {
+    box-sizing: border-box;
+    align-items: flex-start;
+    margin-left: 10px;
+    border: 1px solid rgb(76, 76, 76);
+    border-radius: 4px;
+    height: 34px;
+    padding: 0 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 119, 197);
+    cursor: pointer;
+}
+
+.sign-in-col-2 span {
+    padding-left: 5px;
+}
+
+.sign-in-col-2 button:before {
+    content: url(whitelock.png);
+}
+
+/*
+Header
+*/
+
+.header-logo {
+    padding: 20px 0;
+}
+
+/*
+Main
+*/
+
+.sign-up-logos {
+    margin-bottom: 15px;
+}
+
+.sign-up-logos li {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+.sign-up-logos li:last-child {
+    margin-right: 0px;
+}
+
+.sign-up-box {
+    background: white;
+    border: 1px solid #c7c7c7;
+    border-radius: 2px;
+    width: 318px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.sign-up-box header {
+    padding-bottom: 20px;
+}
+
+.sign-up-box h1 {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.sign-up-box h2 {
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 6px;
+    text-align: left;
+}
+
+input {
+    display: block;
+    box-sizing:border-box;
+    height: 32px;
+    line-height: 20px;
+    width: 318px;
+    font-size: 16px;
+    border: 1px solid rgb(193, 197, 200);
+    border-radius: 3px;
+    padding: 0 6px;
+}
+
+.sign-up-space {
+    height: 30px;
+}
+
+form {
+    position: relative;
+}
+
+.form-label {
+    padding-bottom: 6px;
+}
+
+form button {
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+    background-color: rgb(0, 119, 197);
+    border: none;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.75);
+    border-radius: 4px;
+    float: left;
+    box-shadow: rgba(0, 0, 0, 0.75);
+    height: 44px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+form .btn {
+    background-image: url(whitelock.png);
+    background-repeat: no-repeat;
+    background-position: 75px 50%;
+}
+
+input.btn {
+    color: white;
+    background-color: rgb(0, 119, 197);
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up-box footer {
+    clear: both;
+}
+
+.sign-up-box footer i {
+    color: rgb(117, 117, 117);
+    line-height: 20px;
+}
+
+.captcha {
+    padding: 16px;
+    margin: 32px -30px -30px -30px;
+    font-size: 10px;
+    color: rgb(141, 144, 150);
+    background-color: rgb(236, 238, 241)
+}
+
+.captcha a {
+    font-size: 10px;
+}
+
+/*
+Footer
+*/
+
+.footer-end {
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    margin: 0 50px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer-end li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.footer-end a {
+    color: rgb(76, 76, 76);
+}
